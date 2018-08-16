@@ -1,0 +1,48 @@
+h1{
+	text-align: center;
+}
+
+
+.image{
+	margin-left : 550px;
+}
+
+.region{
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ville{
+	
+	display: flex;
+	flex-direction: column;
+}
+
+
+.combien{
+	display: flex;
+	flex-direction: column;
+}
+
+.date{
+	display: flex;
+	flex-direction: column;
+}
+
+#ajouter{
+	padding-top: 50px;
+	margin-left: 20px;
+}
+
+input{
+	margin:1%;
+	margin-right:  50px;
+}
+
+body{
+	background-image: url(.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
