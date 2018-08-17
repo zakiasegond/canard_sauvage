@@ -8,7 +8,9 @@
 	<body>
 		<img class="image" src="logo.png">
         <h1>GEOCANARD</h1>
-		<h2>Ajouter</h2>
+		
+
+    <div class="p-3 mb-2 bg-secondary text-white"><h2>Ajouter</h2></div>
 
     <div id="ajouter">
 
@@ -23,8 +25,7 @@
 
             Combien de canards<input type="number" class="combien" name="combien"> 
 
-            
-            <button  class="button" name="submit" type="submit" value="Envoyer">Enregistrer</button>
+            <button  class="btn btn-success button" name="submit" type="submit" value="Envoyer">Enregistrer</button>
 
         </form>
 

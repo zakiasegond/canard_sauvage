@@ -9,30 +9,30 @@ h1{
 
 .region{
 	padding-top: 10px;
-	display: flex;
+	
 	flex-direction: column;
 }
 
 .ville{
 	
-	display: flex;
+	
 	flex-direction: column;
 }
 
 
 .combien{
-	display: flex;
+	
 	flex-direction: column;
 }
 
 .date{
-	display: flex;
-	flex-direction: column;
+
 }
 
 #ajouter{
 	padding-top: 50px;
 	margin-left: 20px;
+	text-align: center;
 }
 
 input{
@@ -41,8 +41,14 @@ input{
 }
 
 body{
-	background-image: url(.jpg);
+	background-image: url(daffyduck.png);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-position: right;
+	background-size: 300px;
+
+}
+
+.btn-success{
+	font-size: 20px;
+	margin: 30px;
 }

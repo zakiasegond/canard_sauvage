@@ -30,57 +30,38 @@
 			{
         	die('Erreur : ' . $e->getMessage());
 			}
-
-
 $req = $bdd->query('SELECT id, region, ville, combien, DATE_FORMAT(date, \'%d/%m/%Y \') AS date FROM localisation ORDER BY date DESC LIMIT 0, 9');
+?>
 
 
+<div class="news" >
+
+    <table class="table table-striped">
+    
+<?php
 while ($donnees = $req->fetch())
 
 {
 
-?>
 
-<div class="news">
-
-    <h2>
-
-        <?php echo htmlspecialchars($donnees['region']); ?>
-
-        <em>à <?php echo $donnees['ville']; ?></em>
-
-    </h2>
-
+    	echo "<tr><td> le" . $donnees['date'] . "</td><td>" . $donnees['ville'] . "</td><td>" . $donnees['region'] . "</td><td>" . $donnees['combien'] . " Canards </td></tr>" ;
     
+          
+
+   
+} // Fin de la boucle des articles.
+$req->closeCursor();
+    	?>
     
-    
-    <p>
-
-
-    <em><b>Canards <?php echo nl2br(htmlspecialchars($donnees['combien'])); ?></b></em>
-
-
-    / le <?php echo nl2br(htmlspecialchars($donnees['date']));
-
-    ?>
-
-    <br />
-
-    
-    </p>
+    </table>
+ 
 
     <em><a href="geocanard1.php?localisation=<?php echo $donnees['id']; ?>">Formulaire d'ajout</a></em>
     
 
 </div>
 
-<?php
 
-} // Fin de la boucle des articles.
-
-$req->closeCursor();
-
-?>
 
 
 
